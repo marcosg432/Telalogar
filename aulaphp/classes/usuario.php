@@ -12,7 +12,7 @@
         {
            $pdo = new PDO("mysql:dbname=".$database,$user,$password);
         }
-        catch(PDOException $erro)
+        catch(PDOException $erro){
            $msgErro = $erro-> getMessage();
         }
       }
